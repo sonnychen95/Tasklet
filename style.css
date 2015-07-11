@@ -19,7 +19,7 @@ body {
 nav {
 	position: absolute;
 	top: 0;
-	font-size: 1.5em;
+	font-size: 25px;
 	display:block;
 	width: 100%;
 	border-bottom: 6px solid #3c446d;
@@ -50,7 +50,7 @@ nav {
 input {
 	display:block;
 	font-family: 'varela round';
-	font-size: 16px;
+	font-size: 18px;
 	color: #404041;
 	margin-left: auto;
 	margin-right: auto;
@@ -65,6 +65,7 @@ input {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	-webkit-appearance: none;
+	border-radius: 0px;
 }
 
 textarea, input { 
@@ -78,7 +79,6 @@ input:focus {
 h2 {
 	font-size:  15px;
 	color: #808284;
-	letter-spacing: 1px;
 	text-align: center;
 	margin-top: 40px;
 	margin-bottom: 30px;
