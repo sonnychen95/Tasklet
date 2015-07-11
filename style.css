@@ -6,6 +6,11 @@ html {
 	height: 100%;
 
 }
+
+@font-face {
+	font-family: "varela round";
+	src: url("fonts/varela.otf");
+}
 body {
 	margin: 0;
 	padding: 0;
@@ -21,12 +26,13 @@ nav {
 	letter-spacing: .5px;
 	background-color: #474e93;
 	height: 2em;
+	padding-top: 20px;
 }
 
 #title {
 	margin-left: 15px;
 	position: absolute;
-	top: 12px;
+	top: 32px;
 }
 
 #add {
@@ -41,21 +47,16 @@ nav {
 	text-align: center;
 }
 
-#add:hover {
-	background-color: #cc366c;
-	color: #e9457a;
-}
-
 input {
 	display:block;
 	font-family: 'varela round';
-	font-size: 15px;
+	font-size: 16px;
 	color: #404041;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 50px;
 	width: 92%;
-	height: 60px;
+	height: 68px;
 	margin-top: 15px;
 	border: solid #e9457a;
 	border-width: 0px 0px 0px 6px;
@@ -63,6 +64,7 @@ input {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	-webkit-appearance: none;
 }
 
 textarea, input { 
@@ -78,7 +80,7 @@ h2 {
 	color: #808284;
 	letter-spacing: 1px;
 	text-align: center;
-	margin-top: 30px;
+	margin-top: 40px;
 	margin-bottom: 30px;
 }
 

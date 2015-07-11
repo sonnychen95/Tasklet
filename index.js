@@ -8,7 +8,7 @@ $(document).ready(function(){
 		} 
 
 		if (maxappend > 0) {
-			document.getElementById("list").style.marginTop = "70px";
+			document.getElementById("list").style.marginTop = "90px";
 		}
 	});
 
