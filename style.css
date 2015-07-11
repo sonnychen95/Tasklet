@@ -9,7 +9,7 @@ html {
 
 @font-face {
 	font-family: "varelaround";
-	src: url("fonts/varelaround.otf");
+	src: url("fonts/varela.otf");
 }
 body {
 	margin: 0;
@@ -73,7 +73,6 @@ textarea, input {
 
 input:focus {
 	color: #e9457a;
-	content: "X";
 }
 
 h2 {
