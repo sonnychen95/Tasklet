@@ -1,5 +1,7 @@
 $(document).ready(function(){
+	
 	var maxappend = 0;
+
 
 	$(document).on("click", "#add", function() {
 		if (maxappend < 10) {
