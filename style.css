@@ -8,7 +8,7 @@ html {
 
 @font-face {
 	font-family: "lato";
-	src: url("fonts/lato.otf");
+	src: url("fonts/lato.ttf");
 }
 body {
 	margin: 0;
