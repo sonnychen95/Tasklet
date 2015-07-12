@@ -1,9 +1,9 @@
 $(document).ready(function(){
-	
+
 	var maxappend = 0;
 
 
-	$(document).on("click", "#add", function() {
+	$("#add").on("touchstart", function() {
 		if (maxappend < 10) {
 		$("#list").append("<div id='item'><textarea cols='29' rows='2' maxlength='80' placeholder='Task' style='background:none; border:medium none;''></textarea></div>");
 		maxappend++
