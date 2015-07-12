@@ -1,15 +1,14 @@
 html {
 	background-color: #eeeeee;
-	font-family: "varelaround";
 	color: white;
+	font-family: "lato";
 	width: 100%;
 	height: 100%;
-
 }
 
 @font-face {
-	font-family: "varelaround";
-	src: url("fonts/varela.otf");
+	font-family: "lato";
+	src: url("fonts/lato.otf");
 }
 body {
 	margin: 0;
@@ -22,10 +21,18 @@ nav {
 	font-size: 25px;
 	display:block;
 	width: 100%;
-	background-color: #3f51b5;
+	background: #5265aa; /* Old browsers */
+	background: -moz-linear-gradient(top, #5265aa 44%, #4555a4 92%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(44%,#5265aa), color-stop(92%,#4555a4)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #5265aa 44%,#4555a4 92%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #5265aa 44%,#4555a4 92%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #5265aa 44%,#4555a4 92%); /* IE10+ */
 	height: 2em;
 	padding-top: 20px;
-	border-bottom: 6px solid #394984;
+}
+
+#list {
+	padding-top: 75px;
 }
 
 #title {
@@ -35,21 +42,30 @@ nav {
 }
 
 #add {
-	margin-right: 15px;
-	margin-top: 9px;
+	margin-right: 8px;
 	float: right;
-	width: 32px;
-	height: 32px;
-	border-radius: 3px;
-	background-color: #e9457a;
-	font-size: 27px;
+	width: 40px;
+	height: 40px;
+	font-size: 40px;
 	text-align: center;
+	line-height: 52px;
 }
 
-input {
+#add:active {
+	opacity: .5;
+}
+
+#delete {
+	opacity: .5;
+	float: right;
+	margin-right: 10px;
+	margin-top: 25px;
+
+}
+
+#item {
+	background-color: white;
 	display:block;
-	font-family: "varelaround";
-	font-size: 18px;
 	color: #414141;
 	margin-left: auto;
 	margin-right: auto;
@@ -57,8 +73,7 @@ input {
 	width: 92%;
 	height: 68px;
 	margin-top: 15px;
-	border: solid #e9457a;
-	border-width: 0px 0px 0px 6px;
+	border: 0.5px solid #d0d1d2;
 	padding-left: 10px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -67,12 +82,21 @@ input {
 	border-radius: 0px;
 }
 
-textarea, input { 
-	outline: none; 
+textarea {
+	padding-top: 10px;
+	font-family: "lato";
+	line-height: 23px;
+	font-size: 16px;
+	color: #414751;
+	vertical-align: middle;
+	resize: none;
 }
 
-input:focus {
-	color: #e9457a;
+textarea:focus {
+	font-family: "lato";
+	font-size: 16px;
+	outline: none; 
+	color: #4555a4;
 }
 
 h2 {

@@ -1,19 +1,22 @@
 $(document).ready(function(){
 	var maxappend = 0;
 
-	$("#add").click(function(e) {
+	$(document).on("click", "#add", function() {
 		if (maxappend < 10) {
-		$("#list").append("<input>");
+		$("#list").append("<div id='item'><textarea cols='29' rows='2' maxlength='80' placeholder='Task' style='background:none; border:medium none;''></textarea></div>");
 		maxappend++
 		} 
-
-		if (maxappend > 0) {
-			document.getElementById("list").style.marginTop = "95px";
-		}
 	});
 
-	Hammer(document.getElementById("list")).on("swipe", function() {
-          alert("hi");  
-    });
+	$(document).on("swipe", "#item", function() {
+		$(this).append("<div id='delete'>X</div>")
+    	$(this).css("background-color", "#28c3dd");
+ 		$(this).css("color", "white");
+	});
+
+	$("item").on("click", "#delete", function() {
+		$(this).remove();
+	});
+
     
 });
