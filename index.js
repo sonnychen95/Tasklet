@@ -11,13 +11,17 @@ $(document).ready(function(){
 	});
 
 	$(document).on("swipe", "#item", function() {
-		$(this).append("<div id='delete'>X</div>")
-    	$(this).css("background-color", "#28c3dd");
- 		$(this).css("color", "white");
-	});
+		if($(this).css("height")=="68px") {
+    	$(this).css("background-color", "#8f9fbc");
+ 		$(this).css("color", "red");
+ 		$(this).css("height", "69px");
+ 		$("textarea").prop("disabled", true);
+ 		} else {
+ 			$(this).css("background-color", "white");
+ 			$(this).css("height", "68px");
+ 			$("textarea").prop("disabled", false);
 
-	$("item").on("click", "#delete", function() {
-		$(this).remove();
+ 		}
 	});
 
     

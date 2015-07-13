@@ -1,13 +1,13 @@
 html {
 	background-color: #eeeeee;
 	color: white;
-	font-family: "lato";
+	font-family: "varela";
 	width: 100%;
 	height: 100%;
 }
 
 @font-face {
-	font-family: "lato";
+	font-family: "varela";
 	src: url("fonts/lato.ttf");
 }
 body {
@@ -18,16 +18,15 @@ body {
 nav {
 	position: absolute;
 	top: 0;
-	font-size: 25px;
+	font-size: 20px;
 	display:block;
 	width: 100%;
-	background: #5265aa; /* Old browsers */
-	background: -moz-linear-gradient(top, #5265aa 44%, #4555a4 92%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(44%,#5265aa), color-stop(92%,#4555a4)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #5265aa 44%,#4555a4 92%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #5265aa 44%,#4555a4 92%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #5265aa 44%,#4555a4 92%); /* IE10+ */
-	height: 2em;
+	background: -moz-linear-gradient(top, #5f6faa 49%, #4555a4 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(49%,#5f6faa), color-stop(100%,#4555a4)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #5f6faa 49%,#4555a4 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #5f6faa 49%,#4555a4 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #5f6faa 49%,#4555a4 100%); /* IE10+ */
+	height: 2.2em;
 	padding-top: 20px;
 }
 
@@ -48,7 +47,7 @@ nav {
 	height: 40px;
 	font-size: 40px;
 	text-align: center;
-	line-height: 52px;
+	line-height: 45px;
 }
 
 #add:active {
@@ -66,14 +65,13 @@ nav {
 #item {
 	background-color: white;
 	display:block;
-	color: #414141;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 50px;
 	width: 92%;
 	height: 68px;
 	margin-top: 15px;
-	border: 0.5px solid #d0d1d2;
+	border: 1px solid #e6e6e6;
 	padding-left: 10px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -84,19 +82,18 @@ nav {
 
 textarea {
 	padding-top: 10px;
-	font-family: "lato";
+	font-family: "varela";
 	line-height: 23px;
-	font-size: 16px;
-	color: #414751;
+	font-size: 18px;
+	color: #636875;
 	vertical-align: middle;
 	resize: none;
 }
 
 textarea:focus {
-	font-family: "lato";
-	font-size: 16px;
+	font-size: 18px;
 	outline: none; 
-	color: #4555a4;
+	color: #636875;
 }
 
 h2 {
