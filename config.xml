@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gap:plugin name="org.apache.cordova.statusbar" version="0.1.4" />
+
+<widget xmlns 		= "http://www.w3.org/ns/widgets"
+		xmlns:gap 	= "http://phonegap.com/ns/1.0"
+		id 			= "com.imsonny.tasklet"
+		versionCode	= "1"
+		version     = "1.0.0" >
+
+		<name> Tasklet </name>
+		<description> A minimal to-do list </description>
+
+		<author href = "https://imsonny.com" email = "sonny.chen@mail.com">
+			Sonny Chen
+		</author> 
+
+		<preference name = "orientation" value = "portrait" />
+		<preference name = "fullscreen" value = "false"/>
+		<preference name="StatusBarOverlaysWebView" value="true"/>
+		<preference name="StatusBarBackgroundColor" value="#000000"/>
+		<preference name="StatusBarStyle" value="lightcontent" />
+
+</widget>

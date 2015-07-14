@@ -1,7 +1,7 @@
 html {
 	background-color: #eeeeee;
 	color: white;
-	font-family: "lato";
+	font-family: "varela";
 	width: 100%;
 	height: 100%;
 	-ms-touch-action: manipulation;
@@ -17,9 +17,15 @@ html {
 }
 
 @font-face {
-	font-family: "lato";
-	src: url("fonts/lato.ttf");
+	font-family: "varela";
+	src: url("fonts/varela.otf");
 }
+
+@font-face {
+	font-family: "lato";
+	src: url("fonts/latosemi.ttf");
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -28,15 +34,12 @@ body {
 nav {
 	position: absolute;
 	top: 0;
+	text-align: center;
 	font-size: 24px;
 	display:block;
 	width: 100%;
-	background: -moz-linear-gradient(top, #5f6faa 49%, #4555a4 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(49%,#5f6faa), color-stop(100%,#4555a4)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #5f6faa 49%,#4555a4 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #5f6faa 49%,#4555a4 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #5f6faa 49%,#4555a4 100%); /* IE10+ */
-	height: 2.2em;
+	background-color: #1abc9c;
+	height: 50px;
 	padding-top: 20px;
 }
 
@@ -44,21 +47,28 @@ nav {
 	padding-top: 75px;
 }
 
+#date {
+	font-size: 19px;
+	top: 38px;
+	position: fixed;
+	margin-left: 10px;
+	opacity: .6;
+}
+
 
 #title {
-	margin-left: 15px;
-	position: absolute;
+	position: fixed;
+	width: 80px;
 	top: 35px;
+	left: 50%;
+	margin-left: -40px;
 }
 
 #add {
-	margin-right: 8px;
-	float: right;
-	width: 40px;
-	height: 40px;
-	font-size: 40px;
-	text-align: center;
-	line-height: 55px;
+	position: fixed;
+	right: 11px;
+	opacity: .6;
+	top: 36px;
 }
 
 #add:active {
@@ -67,17 +77,17 @@ nav {
 
 #delete {
 	position: absolute;
-	color: #919395;
+	color: #b1b1b2;
 	font-family: "lato";
 	background-color: white;
-	height: 35px;
-	width: 120px;
+	height: 40px;
+	width: 140px;
 	text-align: center;
-	line-height: 35px;
+	line-height: 40px;
 	border: 2px solid #d0d1d2;
 	left: 50%;
-	margin-left: -60px;
-	border-radius: 2px;
+	margin-left: -70px;
+	border-radius: 5px;
 	display: none;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -94,7 +104,7 @@ nav {
 	margin-right: auto;
 	margin-top: 50px;
 	width: 92%;
-	height: 68px;
+	height: 75px;
 	margin-top: 15px;
 	border: 1px solid #e6e6e6;
 	padding-left: 10px;
@@ -112,21 +122,29 @@ textarea {
 	font-size: 18px;
 	vertical-align: middle;
 	resize: none;
-	color: #636875;
+	color: #7b97aa;
 }
 
 textarea:focus {
 	font-size: 18px;
 	outline: none; 
-	color: #636875;
+	color: #7b97aa;
 }
 
-h2 {
-	font-size:  18px;
-	color: #808083;
-	text-align: center;
-	margin-top: 40px;
-	margin-bottom: 30px;
+::-webkit-input-placeholder {
+   color: #7b97aa;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #7b97aa;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #7b97aa;  
+}
+
+:-ms-input-placeholder {  
+   color: #7b97aa;  
 }
 
 
