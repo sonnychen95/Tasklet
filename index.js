@@ -1,50 +1,60 @@
 $(document).ready(function(){
 
-	var maxappend = $(".item").length;
 	var d = new Date();
-	var mm = d.getMonth()+1;
+	var month = new Array();
+	month[0] = "Jan";
+	month[1] = "Feb";
+	month[2] = "Mar";
+	month[3] = "Apr";
+	month[4] = "May";
+	month[5] = "Jun";
+	month[6] = "Jul";
+	month[7] = "Aug";
+	month[8] = "Sep";
+	month[9] = "Oct";
+	month[10] = "Nov";
+	month[11] = "Dec";
+	var mm = month[d.getMonth()];
 	var dd = d.getDate();
-	var today = mm+"/"+dd;
+	var today = mm+" "+dd;
 
 	$("#date").text(today);
 
 
-	$("#add").on("touchstart", function() {
-		if (maxappend < 3) {
-		$("#list").append("<div class='item'><textarea cols='29' rows='1' maxlength='40' placeholder='Task' style='background:none; border:medium none;''></textarea></div>");
+	$(document).on("touchstart", "#add", function() {
+		var maxappend = $(".item").length+1;
+		if (0 < maxappend < 11) {
+		$("#list").append("<div class='item'><textarea cols='28' rows='2' maxlength='60' placeholder='Task' style='background:none; border:medium none;''></textarea></div>");
 		$("#delete").css("display", "block");
-		alert(maxappend);
+		$("#empty").css("display", "none");
 		}
 	});
 
 	
 	$("#delete").on("touchstart", function() {
 		$(".done").remove();
+		var maxappend = $(".item").length;
+		if (maxappend == 0) {
+			$(this).css("display", "none");
+			$("#empty").css("display", "block");
+		}
 	});		
 
 	$(document).on("swipe", ".item", function() {
 		if($(this).css("height")=="75px") {
+		$(this).append("<img class='complete' src='images/greencheck.png'>")
     	$(this).css("background-color", "#40586b");
     	$(this).css("height", "76px");
     	$(this).addClass("done");
 
+
  		} else {
+ 			$(this).children("img").remove();
  			$(this).css("background-color", "white");
  			$(this).css("height", "75px");
- 			$("textarea").prop("disabled", false);
  			$(this).removeClass("done");
- 			$("textarea").css("color", "#636875");
  		}
 	});
-
-	$(document).on("swipe", "textarea", function() {
-		if($(".item").css("height")=="75px"); {
- 		$(this).css("color", "#fff");
- 		$(this).prop("disabled", true);
-		}  
-	});
-
-
-
+	
     
 });

@@ -8,7 +8,6 @@ html {
 	touch-action: manipulation;
 }
 
-
 *:focus {
     outline: none;
     -moz-box-shadow: none;
@@ -32,7 +31,7 @@ body {
 }
 
 nav {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	text-align: center;
 	font-size: 24px;
@@ -45,6 +44,16 @@ nav {
 
 #list {
 	padding-top: 75px;
+}
+
+#empty {
+	width: 100%;
+	margin: auto;
+	margin-top: 70px;
+	color: #a5a7aa;
+	font-family: "lato";
+	text-align: center;
+	display: blocks;
 }
 
 #date {
@@ -80,13 +89,13 @@ nav {
 	color: #b1b1b2;
 	font-family: "lato";
 	background-color: white;
-	height: 40px;
-	width: 140px;
+	height: 42px;
+	width: 146px;
 	text-align: center;
-	line-height: 40px;
+	line-height: 42px;
 	border: 2px solid #d0d1d2;
 	left: 50%;
-	margin-left: -70px;
+	margin-left: -73px;
 	border-radius: 5px;
 	display: none;
 	margin-top: 20px;
@@ -95,6 +104,16 @@ nav {
 
 #delete:active {
 	background-color: #d8d8d8;
+}
+
+.complete {
+	position: fixed;
+	right: 30px;
+	margin-top: 27px;
+	height: 20px;
+	user-drag: none; 
+	-moz-user-select: none;
+	-webkit-user-drag: none;
 }
 
 .item {
