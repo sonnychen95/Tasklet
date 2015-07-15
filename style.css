@@ -86,7 +86,7 @@ nav {
 
 #delete {
 	position: absolute;
-	color: #a5a7aa;
+	color: #cacbcc;
 	font-family: "lato";
 	font-size: 18px;
 	background-color: white;
@@ -94,13 +94,17 @@ nav {
 	width: 160px;
 	text-align: center;
 	line-height: 42px;
-	border: 2px solid #d0d1d2;
+	border: 2px solid #dbdbdb;
 	left: 50%;
 	margin-left: -80px;
 	border-radius: 5px;
 	display: none;
 	margin-top: 20px;
-	margin-bottom: 40px;
+	margin-bottom: 19px;
+}
+
+#whole {
+	padding: 1px;
 }
 
 #delete:active {

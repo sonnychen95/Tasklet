@@ -23,7 +23,7 @@ $(document).ready(function(){
 
 	$(document).on("touchstart", "#add", function() {
 		var maxappend = $(".item").length+1;
-		if (0 < maxappend < 11) {
+		if (maxappend < 11) {
 		$("#list").append("<div class='item'><textarea cols='28' rows='2' maxlength='60' placeholder='Task' style='background:none; border:medium none;''></textarea></div>");
 		$("#delete").css("display", "block");
 		$("#empty").css("display", "none");
