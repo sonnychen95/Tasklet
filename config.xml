@@ -11,11 +11,10 @@
 		<author href = "https://imsonny.com" email = "sonny.chen@mail.com">
 			Sonny Chen
 		</author> 
+		
+		<gap:plugin name="org.apache.cordova.statusbar" version="0.1.4" />
 
 		<preference name = "orientation" value = "portrait" />
 		<preference name = "fullscreen" value = "false"/>
-		<preference name = "StatusBarOverlaysWebView" value = "true"/>
-		<preference name = "StatusBarBackgroundColor" value = "#000000"/>
-		<preference name = "StatusBarStyle" value = "lightcontent" />
 
 </widget>

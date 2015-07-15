@@ -53,7 +53,7 @@ nav {
 	color: #a5a7aa;
 	font-family: "lato";
 	text-align: center;
-	display: blocks;
+	display: block;
 }
 
 #date {
@@ -86,20 +86,21 @@ nav {
 
 #delete {
 	position: absolute;
-	color: #b1b1b2;
+	color: #a5a7aa;
 	font-family: "lato";
+	font-size: 18px;
 	background-color: white;
 	height: 42px;
-	width: 146px;
+	width: 160px;
 	text-align: center;
 	line-height: 42px;
 	border: 2px solid #d0d1d2;
 	left: 50%;
-	margin-left: -73px;
+	margin-left: -80px;
 	border-radius: 5px;
 	display: none;
 	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 #delete:active {
@@ -107,7 +108,7 @@ nav {
 }
 
 .complete {
-	position: fixed;
+	position: absolute;
 	right: 30px;
 	margin-top: 27px;
 	height: 20px;
